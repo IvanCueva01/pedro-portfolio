@@ -12,7 +12,7 @@ export default function Projects() {
       technologies: ["Python", "SQLite3", "Faiss", "WhatsApp Cloud API"],
       icon: <Bot className="w-6 h-6" />,
       color: "bg-green-100 text-green-600",
-      link: "https://github.com/IvanCueva01/whatsapp-bot-ai"
+      link: "https://github.com/IvanCueva01/api-whatsapp-python"
     },
     {
       title: "Blog Web App",
@@ -38,6 +38,7 @@ export default function Projects() {
       technologies: ["React", "Tailwind CSS"],
       icon: <User className="w-6 h-6" />,
       color: "bg-orange-100 text-orange-600",
+      link: "https://github.com/IvanCueva01/pedro-portfolio"
     },
   ]
 
@@ -70,10 +71,12 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <Button variant="outline" size="sm" className="flex items-center gap-2 bg-transparent">
-                    <Github className="w-4 h-4" />
-                    Código
-                  </Button>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="flex items-center gap-2 bg-transparent">
+                      <Github className="w-4 h-4" />
+                      Code
+                    </Button>
+                  </a>
                   <Button variant="outline" size="sm" className="flex items-center gap-2 bg-transparent">
                     <ExternalLink className="w-4 h-4" />
                     Demo
